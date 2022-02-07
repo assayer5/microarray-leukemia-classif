@@ -15,7 +15,7 @@ Reduced 7,129 features to ~5 features for classification
 - generated metrics on each gene/feature (i.e. t-test p-values, mutual information scores) 
 - filtered features based on chosen threshold values for metrics
 - generated correlation matrix on remaining features
-- eliminated features correlated above threshold, keeping features with lower p-value metric
+- eliminated features correlated above threshold, keeping features with lower p-value or mutual information metric
 
 ### Model
 Support Vector Classifier
@@ -23,7 +23,7 @@ Support Vector Classifier
 ### Data Observations
 - The histogram of p-values for each gene indicates a high number of differentially expressed genes. Adjusted p-values obtained by permutation of the samples 
 resulted in a slightly larger number of genes with low p-values, but the overall distribution appeared unchanged.
-- Filtering features with either the regular or adjusted p-values resulted in some of the same genes chosen for the final model.
+- Estimated ~52% of genes differentially expressed
 - Although a final feature set of ~5 genes was chosen, the classification results were comparable when some genes in the final feature set were substituted with 
 highly correlated alternate genes (those eliminated in the final step of feature selection due to high correlation). 
 - Simulation of picking a random 5 genes for classification showed a mean classification score of ~0.86, still quite high.
