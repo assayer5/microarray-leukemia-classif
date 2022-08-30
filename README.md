@@ -12,7 +12,7 @@ numpy, pandas, scipy, sklearn, matplotlib, seaborn
 
 ### Data Pre-processing 
 - no additional pre-processing (files appended adjp)
-- zero cutoff for gene expression, log base 2 transformed (files appended adjplog2)
+- zero cutoff for gene expression, log base 2 transformed (files appended log2)
 
 ### Feature Selection
 Reduced 7,129 features to ~5 features for classification
