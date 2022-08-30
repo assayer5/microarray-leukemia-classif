@@ -10,6 +10,10 @@ Python
 ### Packages Used
 numpy, pandas, scipy, sklearn, matplotlib, seaborn
 
+### Data Pre-processing 
+- no additional pre-processing (files appended adjp)
+- zero cutoff for gene expression, log base 2 transformed (files appended adjplog2)
+
 ### Feature Selection
 Reduced 7,129 features to ~5 features for classification
 - generated metrics on each gene/feature (i.e. t-test p-values, mutual information scores) 
@@ -20,7 +24,8 @@ Reduced 7,129 features to ~5 features for classification
 ### Model
 Support Vector Classifier
 
-### Data Observations
+### Observations
+When fit on data without additional preprocessing (files appended adjp):
 - The histogram of p-values for each gene indicates a high number of differentially expressed genes. Adjusted p-values obtained by permutation of the samples 
 resulted in a slightly larger number of genes with low p-values, but the overall distribution appeared unchanged.
 - Estimated ~52% of genes differentially expressed
